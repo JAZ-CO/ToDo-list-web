@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+    <script src="index.js" defer></script>
+    <style>
+        body{
+            min-width: 900px;
+            background-color:darkslategrey;
+        }
+        h1{
+            color: aliceblue;
+            margin: auto;
+            width: 50%;
+            margin-bottom: 10px;
+            
+            
+        }
+        @keyframes addAnimation{
+            from {opacity: 0%;}
+            to {opacity: 100%;}
+        }
+        p.taskText{
+            
+            background-color: darkslategrey;
+            border-style: solid;
+            border-color: white;
+            background-color: white;
+            border-radius: 1cm;
+            animation-name: addAnimation;
+            animation-duration: 1.5s;
+            
+        }
+        #content{
+            margin: auto;
+            width: 50%;
+            border: 3px solid white;
+            padding: 10px;
+
+            
+            
+        }
+        #Tasks{
+            margin: auto;
+            margin-top: 20px;
+            width: 50%;
+            border: 3px solid white;
+            padding: 10px;
+
+            
+            
+        }
+        #textId{
+            margin: auto;
+            font-size: 22px;
+            border-radius: 1cm;
+            padding-top: 0px;
+            padding-right: 1px;
+            padding-left: 20px;
+            
+            
+        }
+        .checkboxId{
+            float: right;
+
+        }
+        #buttons{
+            margin: auto;
+            width: 50%;
+            
+            align-items: center;
+            justify-content: center;
+
+        }
+        input[type=button] {
+            
+            
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+           border: white;
+            cursor: pointer;
+            border-radius: 8px;
+           
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Simple ToDo list program</h1>
+    
+    <div id="content">
+        <input type="text" id="textId" placeholder="Type here">
+        <br>
+        <br>
+        <div id="buttons">
+        <input type="button" value="Add" id="addBtn" style="background-color: #4CAF50;">
+        <input type="button" value="Remove" id="removeBtn" style="float: right; background-color: rgb(165, 4, 4);">
+        </div>
+        
+        <div id="Tasks">
+            
+        </div>
+    </div>
+</body>
+</html>
