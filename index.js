@@ -7,11 +7,10 @@ document.getElementById("addBtn").onclick = function(){
     else{
     console.log("hello")
     
-
     let div = document.getElementById('Tasks');
-    let p = document.createElement("p");
+        
+    let p = document.createElement("p"); 
     p.textContent = document.getElementById("textId").value;
-
     p.setAttribute("class","taskText");
 
     let checkBox = document.createElement("INPUT");
@@ -29,9 +28,6 @@ document.getElementById("addBtn").onclick = function(){
         }
 
     })
-
-    
-
    
     document.getElementById("textId").value = ""
     p.appendChild(checkBox);
